@@ -56,7 +56,9 @@ public class FXlibProjController implements Initializable {
 
 	@FXML public void handleUndoButtonAction(ActionEvent event) {
 		ObjectString feldStr;
-		if(! stack.isEmpty()) {
+		if(stack.isEmpty()) {
+			ausgabe.setText("Änderungsspeicher leer");
+		} else {
 			feldStr= stack.pop();
 			feldStr.obj.setText(feldStr.str);
 			stack.pop();
