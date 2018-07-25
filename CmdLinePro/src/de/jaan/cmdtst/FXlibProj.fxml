@@ -30,6 +30,7 @@
     <Button text="Submit" 
 		onAction="#handleSubmitButtonAction"
     	GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    	
     <Button text="Undo" 
 		onAction="#handleUndoButtonAction"
     	GridPane.columnIndex="1" GridPane.rowIndex="4"/>
@@ -37,6 +38,7 @@
     <Text fx:id="ausgabe"
        GridPane.columnIndex="0" GridPane.columnSpan="2"
        GridPane.halignment="RIGHT" GridPane.rowIndex="6"/>
+       
     <TextArea fx:id="console"
        GridPane.columnIndex="0" GridPane.columnSpan="2"
        GridPane.halignment="CENTER" GridPane.rowIndex="7"/>
