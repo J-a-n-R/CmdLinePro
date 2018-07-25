@@ -24,10 +24,10 @@ public class Main  extends Application  {
 		// processargs(args);
 		launch(args);
 		// die eigentliche Programmaktion in Abhängigkeit von den Argumenten
-		dothomething();
+		//dothomething();
 	}
 
-	private static void dothomething() {
+	static void dothomething() {
 		for (int i=0; i<anz; i++)
 			System.out.println(text);		
 	}

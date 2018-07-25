@@ -37,6 +37,7 @@ public class FXlibProjController implements Initializable {
 		Main.text = nameField.getText();
 		Main.anz = passwordField.getText().length();
 		ausgabe.setText( Main.anz + " * " + Main.text);
+		Main.dothomething();
 	}
 
   public class Console extends OutputStream {
