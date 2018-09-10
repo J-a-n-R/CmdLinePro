@@ -25,6 +25,7 @@ public class FXlibProjController implements Initializable {
 	@FXML PasswordField passwordField;
 	@FXML Text ausgabe;
 	@FXML TextArea console;
+	// Modell m = new Modell();
 	private PrintStream ps = new PrintStream(new Console(console));
 	Stack<ObjectString> stack;
 	
@@ -34,10 +35,11 @@ public class FXlibProjController implements Initializable {
 
 	@FXML public void handleSubmitButtonAction(ActionEvent event) {
 		// jetzt werden die Parametervariablen belegt
-		Main.text = nameField.getText();
-		Main.anz = passwordField.getText().length();
-		ausgabe.setText( Main.anz + " * " + Main.text);
-		Main.dothomething();
+		// Modell m = new Modell();
+		Modell.setText(nameField.getText());
+		Main.m.setAnz(passwordField.getText().length());
+		ausgabe.setText( Main.m.getAnz() + " * " + Modell.getText());
+		Main.m.dothomething();
 	}
 
   public class Console extends OutputStream {
@@ -58,6 +60,7 @@ public class FXlibProjController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		
 		ps = new PrintStream(new Console(console)) ;
     System.setOut(ps);
     System.setErr(ps);
