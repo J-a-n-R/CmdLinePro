@@ -60,7 +60,8 @@ public class FXlibProjController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		
+		nameField.setText(Main.m.getText());
+		passwordField.setText(new String(new char[Main.m.getAnz()]).replace('\0', '*'));
 		ps = new PrintStream(new Console(console)) ;
     System.setOut(ps);
     System.setErr(ps);

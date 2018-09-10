@@ -25,7 +25,7 @@ public class Main  extends Application  {
 		// auswerten der Argumente
 		m = new Modell();
 
-		//m.processargs(args);
+		m.processargs(args);
 		launch(args);
 		// die eigentliche Programmaktion in Abh�ngigkeit von den Argumenten
 		//dothomething();
