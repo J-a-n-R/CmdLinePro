@@ -26,7 +26,10 @@ public class Main  extends Application  {
 		m = new Modell();
 
 		m.processargs(args);
-		launch(args);
+		if (args.length>=2) {
+			m.dothomething();
+		}
+		else launch(args);
 		// die eigentliche Programmaktion in Abh�ngigkeit von den Argumenten
 		//dothomething();
 	}
