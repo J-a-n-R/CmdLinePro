@@ -26,7 +26,7 @@ public class Main  extends Application  {
 		m = new Modell();
 
 		m.processargs(args);
-		if (args.length>=2) {
+		if (m.getAnz()>0) {
 			m.dothomething();
 		}
 		else launch(args);
