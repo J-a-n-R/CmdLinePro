@@ -36,9 +36,9 @@ public class FXlibProjController implements Initializable {
 	@FXML public void handleSubmitButtonAction(ActionEvent event) {
 		// jetzt werden die Parametervariablen belegt
 		// Modell m = new Modell();
-		Modell.setText(nameField.getText());
+		Main.m.setText(nameField.getText());
 		Main.m.setAnz(passwordField.getText().length());
-		ausgabe.setText( Main.m.getAnz() + " * " + Modell.getText());
+		ausgabe.setText( Main.m.getAnz() + " * " + Main.m.getText());
 		Main.m.dothomething();
 	}
 

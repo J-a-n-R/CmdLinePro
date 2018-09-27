@@ -1,8 +1,5 @@
 package de.jaan.cmdtst;
 
-import java.io.InputStream;
-import java.net.URLConnection;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

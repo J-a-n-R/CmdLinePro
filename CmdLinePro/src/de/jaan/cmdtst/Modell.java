@@ -10,9 +10,15 @@ import java.net.URL;
 public class Modell {
 
 	// Main extends Application gemacht
-	private static String text;
+	private String text;
 	private  int anz;
-
+	private FileInfo fi;
+	public String getFilename() {
+		return this.fi.getFilename();
+	}
+	public void setFilename(String filename) {
+		this.fi.setFilename(filename);
+	}
 	public Modell() {
 		// TODO Auto-generated constructor stub
 	}
@@ -61,26 +67,26 @@ public class Modell {
 		
 	
 		for (int i=0; i< getAnz(); i++)
-			System.out.println(Modell.getText());		
+			System.out.println(getText());		
 	}
 
 	public  void processargs(String[] args) {
-		if (args.length>0) Modell.setText(args[0]);
+		if (args.length>0) setText(args[0]);
 		if (args.length>1) setAnz(args[1].length());
 	}
 
 	/**
 	 * @return the text
 	 */
-	static String getText() {
-		return text;
+	 String getText() {
+		return this.text;
 	}
 
 	/**
 	 * @param text the text to set
 	 */
-	static void setText(String text) {
-		Modell.text = text;
+	 void setText(String text) {
+		this.text = text;
 	}
 
 	/**
